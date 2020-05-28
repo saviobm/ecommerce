@@ -1,0 +1,22 @@
+<div class="container">
+    <br>
+       <div class="row">
+            <div class="col-4">
+                    <div class="text-center">
+                            <img src="assets/img/login.jpg" class="rounded" alt="..." style="width:50%">
+                     </div>
+            </div>
+            <div class="col-8">
+                <form [formGroup]="loginForm" (ngSubmit)="login()" >
+                    <div class="form-group">
+                        <input class="form-control"  formControlName="email" placeholder="Entre com o email" style="width:50%">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" formControlName="password" placeholder="Entre com a senha" style="width:50%">
+                    </div>
+                    <input type="submit" class="btn btn-secondary align-right" value="Logar">
+                    </form>
+            </div>
+       </div>
+
+<div>
